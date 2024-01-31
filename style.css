@@ -13,7 +13,7 @@
 :root{
     --body-color: #E4E9F7;
     --nav-color: #57662F;
-    --side-nav: #010718;
+    --side-nav: #6a8b0e;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
@@ -26,8 +26,8 @@ body{
 
 body.dark{
     --body-color: #18191A;
-    --nav-color: #242526;
-    --side-nav: #242526;
+    --nav-color: #57662F;
+    --side-nav: #6a8b0e;
     --text-color: #CCC;
     --search-bar: #242526;
 }
@@ -73,6 +73,13 @@ nav .nav-bar .logo a{
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
+}
+nav .nav-bar .logo{
+    width: 200px;
+}
+nav .nav-bar .logo  img{
+    width: 80%;
+
 }
 
 .menu .logo-toggle{
@@ -263,7 +270,7 @@ body.dark .search-field i{
         opacity: 0;
         transition: all 0.3s ease;
     }
-
+    
     .menu .logo-toggle{
         display: block;
         width: 100%;
