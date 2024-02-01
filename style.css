@@ -36,7 +36,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
@@ -44,7 +44,6 @@ nav{
 
 body.dark nav{
     border: 1px solid #393838;
-
 }
 
 nav .nav-bar{
