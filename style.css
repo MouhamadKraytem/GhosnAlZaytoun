@@ -13,10 +13,11 @@
 :root{
     --body-color: #E4E9F7;
     --nav-color: #57662F;
-    --side-nav: #6a8b0e;
+    --side-nav: #8c8c2c;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --text-color:black;
 }
 
 body{
@@ -27,9 +28,10 @@ body{
 body.dark{
     --body-color: #18191A;
     --nav-color: #57662F;
-    --side-nav: #6a8b0e;
+    --side-nav: #8c8c2c;
     --text-color: #CCC;
     --search-bar: #242526;
+    --text-color: white;
 }
 
 nav{
