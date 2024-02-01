@@ -9,96 +9,64 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-            *{
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                font-family: poppins;
-            }
-            #about-section {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 80px 12%;
-            }
-            .about-left img{
-                width: 420px;
-                height: auto;
-                transform: translateY(50px);
-            }
-            .about-right {
-                width: 54%;
-            }
-
-            .about-right ul li {
-                display: flex;
-                align-items: center;
-            }
-
-            .about-right h1 {
-                color: #6a8b0e;
-                font-size: 37px;
-                margin-bottom: 5px;
-            }
-
-            .about-right p {
-                color: #444;
-                line-height: 26px;
-                font-size: 15px;
-            }
-
-            .about-right .address {
-                margin: 25px 0;
-            }
-
-            .about-right .address ul li {
-                margin-bottom: 5px;
-            }
-
-            .address .address-logo {
-                margin-right: 15px;
-                color: #6a8b0e;
-            }
-
-            .address .saprater {
-                margin: 0 35px;
-            }
-
-            .about-right .expertise ul {
-                width: 80%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            .expertise h3 {
-                margin-bottom: 10px;
-            }
-
-            .expertise .expertise-logo {
-                font-size: 19px;
-                margin-right: 10px;
-                color: #6a8b0e;
-            }
+            
         </style>
         <!-- css style -->
         <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./aboutStyle.css">
         <!-- icon link -->
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen'></i>
+                <span class="logo navLogo"><img src="../images/Artboard 1.png" alt=""></span>
+        
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#"></a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+        
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../ContactUsPage/ContactSection.html">Category</a></li>
+                        <li><a href="../About/About.html">About</a></li>
+                        <li><a href="./ContactSection.html">Contact US</a></li>
+                    </ul>
+                </div>
+        
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+        
+                    <div class="searchBox">
+                        <div class="searchToggle">
+                            <i class='bx bx-x cancel'></i>
+                            <i class='bx bx-search search'></i>
+                        </div>
+        
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <section id="about-section">
             <!-- about left  -->
-            <div class="about-left">
+            <div class="about-left part">
                 <img src="./1.png" alt="About Img"/>
             </div>
 
             <!-- about right  -->
-            <div class="about-right">
+            <div class="about-right part">
                 <h4>My Story</h4>
                 <h1>About Me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -134,7 +102,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="expertise">
+                <!-- <div class="expertise">
                     <h3>My Expertise</h3>
                     <ul>
                         <li>
@@ -162,7 +130,7 @@
                             <p>React Js</p>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </section>
         <script src="../script.js"></script>
