@@ -20,6 +20,14 @@
     --banner_color: #818ea0;
 }
 
+body.dark {
+    --body-color: #18191A;
+    --nav-color: #57662F;
+    --side-nav: #8c8c2c;
+    --text-color: #CCC;
+    --search-bar: #242526;
+    --text-color: white;
+}
 button.normal {
     font-size: 14px;
     font-weight: 600;
@@ -55,7 +63,7 @@ h1 {
 h2 {
     font-size: 45px;
     line-height: 55px;
-    color: var(--font_color);
+    color: #516a36;
 }
 
 h4 {
@@ -67,7 +75,9 @@ h6 {
     font-weight: 700;
     font-size: 12px;
 }
-
+h5{
+    color: var(--text-color);
+}
 p {
     font-size: 16px;
     color: var(--parg_color);
@@ -137,7 +147,7 @@ body {
 
 #product1 .pro .des h5 {
     padding-top: 7px;
-    color: var(--header_link_color);
+    color: var(--text-color);
     font-size: 14px;
 }
 
