@@ -39,7 +39,7 @@ body{
 section.left .contactTitle h2{
 	position: relative;
 	font-size: 28px;
-	color: #ddd;
+	color: black;
 	display: inline-block;
 	margin-bottom: 25px;
 }
@@ -48,7 +48,7 @@ section.left .contactTitle h2::before{
 	position: absolute;
 	width: 50%;
 	height: 1px;
-	background-color: #888;
+	background-color: black;
 	top: 120%;
 	left: 0;
 }
@@ -63,7 +63,7 @@ section.left .contactTitle h2::after{
 }
 section.left .contactTitle p{
 	font-size: 17px;
-	color: #ccc;
+	color: black;
 	letter-spacing: 1px;
 	line-height: 1.2;
 	padding-bottom: 22px;
@@ -86,7 +86,7 @@ section.left .contactInfo{
 }
 .iconGroup .icon i{
 	font-size: 20px;
-	color: #ddd;
+	color: black;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -94,12 +94,12 @@ section.left .contactInfo{
 }
 .iconGroup .details span{
 	display: block;
-	color: #888;
+	color: black;
 	font-size: 18px;
 }
 .iconGroup .details span:nth-child(1){
 	text-transform: uppercase;
-	color: #ccc;
+	color: black;
 }
 section.left .socialMedia{
 	display: flex;
@@ -119,7 +119,7 @@ section.left .socialMedia{
 	transition: 0.4s;
 }
 .socialMedia a i{
-	color: #ddd;
+	color: black;
 	font-size: 18px;
 	line-height: 35px;
 	border: 1px solid transparent;
@@ -158,7 +158,7 @@ section.left .socialMedia{
 	font-size: 18px;
 	padding: 2px 0px;
 	background-color: white;
-	color: #ddd;
+	color: white;
 	border: none;
 	border-bottom: 2px solid #666;
 	outline: none;
