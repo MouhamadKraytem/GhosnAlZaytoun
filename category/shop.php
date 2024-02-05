@@ -24,7 +24,7 @@
 
                 <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../category/shop.html">Category</a></li>
+                    <li><a href="../category/shop.php">Category</a></li>
                     <li><a href="../About/About.html">About</a></li>
                     <li><a href="../ContactUsPage/ContactSection.html">Contact US</a></li>
                 </ul>
@@ -55,26 +55,22 @@
         <h2>Choose One of Categories</h2>
         <p>Summer Collection New Morden Design</p>
         <div class="pro-container">
-            <div class="pro">
-                <a href="./items/item.html">
-                    <img src="products/product1.jpeg" alt="">
-                    <div class="des">
-                        <span>product brand</span>
-                        <h5>Ghosn Al Zaytoun ProductName</h5>
-                        <h4>88$</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="pro">
-                <a href="./items/item.html">
-                    <img src="products/product1.jpeg" alt="">
-                    <div class="des">
-                        <span>product brand</span>
-                        <h5>Ghosn Al Zaytoun ProductName</h5>
-                        <h4>88$</h4>
-                    </div>
-                </a>
-            </div>
+            <?php
+            include("./getCategory.php");
+            while ($row = mysqli_fetch_assoc($query)) {
+                # code...
+                echo
+                '<div class="pro">
+                        <a href="./allProduct/product.php?catid=' . $row['cat_id'] . '&catName=' . $row['cat_name'] . '">
+                            <img src="products/' . $row['cat_img'] . '" alt="">
+                            <div class="des">
+                                <span></span>
+                                <h5>' . $row['cat_name'] . '</h5>
+                            </div>
+                        </a>
+                    </div>';
+            }
+            ?>
 
 
         </div>

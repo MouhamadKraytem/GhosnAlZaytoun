@@ -1,3 +1,22 @@
+<?php
+if (isset($_GET['prod_id'])) {
+    # code...
+    include("../../connection.php");
+
+    $prodId = $_GET['prod_id'];
+
+    $getInfo = "SELECT * FROM `product` WHERE prod_id = $prodId";
+
+    $query = mysqli_query($conn, $getInfo);
+
+    $prodInfo = mysqli_fetch_assoc($query);
+} else {
+    header("location:../../index.html");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,24 +76,35 @@
 
         </div>
         <div class="single-pro-details">
-            <h4>زعتر مجفف فلسطيني</h4>
-            <h2>123.00$</h2>
+            <h2><?php echo $prodInfo['prod_name']; ?></h2>
+            <h4><?php echo $prodInfo['prod_price'] ."$"; ?></h4>
 
-            <select>
+            <!-- <select>
                 <option value="">Select Size</option>
                 <option value="">XL</option>
                 <option value="">XXL</option>
                 <option value="">Small</option>
                 <option value="">Meduim</option>
-            </select>
-            <input type="number" name="" id="" value="1">
-            <button class="normal">Add to cart</button>
-            <h2>322 in stock</h2>
+            </select> -->
+            
+            
+            <?php
+            if ($prodInfo['quantity'] > 0) {
+                echo '<input type="number" name="" id="" value="1" max='. $prodInfo['quantity'].' min=1>';
+                echo "<button class=normal>Add to cart</button>";
+                echo "<h2>".$prodInfo['quantity']." in stock</h2>";
+            }else{
+                echo "<h2>out of stock</h2>";
+            }
+            ?>
+            
             <h4>Product Details</h4>
-            <p>Al-Ard Dried Za`atar Leaves</p>
+            <p><?php echo $prodInfo['description'];?></p>
 
         </div>
     </section>
+
+
     <footer class="section-p1">
         <div class="col">
             <img src="./img/logo.png" alt="">
