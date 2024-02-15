@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styls.css">
     <link rel="stylesheet" href="./shopStyles.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Shop</title>
@@ -23,7 +23,7 @@
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="../category/shop.php">Category</a></li>
                     <li><a href="../About/About.html">About</a></li>
                     <li><a href="../ContactUsPage/ContactSection.html">Contact US</a></li>

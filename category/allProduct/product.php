@@ -22,7 +22,7 @@ if (isset($_GET['catid']) && isset($_GET['catName'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../homeStyles.css">
+    <link rel="stylesheet" href="../../styls.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./productStyle.css">
 </head>
@@ -41,7 +41,7 @@ if (isset($_GET['catid']) && isset($_GET['catName'])) {
                     </div>
 
                     <ul class="nav-links">
-                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.php">Home</a></li>
                         <li><a href="#">Category</a></li>
                         <li><a href="../../About/About.html">About</a></li>
                         <li><a href="../../ContactUsPage/ContactSection.html">Contact US</a></li>
