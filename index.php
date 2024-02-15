@@ -20,10 +20,13 @@ include("./getCategory.php");
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styls.css" />
+  <link rel="stylesheet" href="./bannerStyle.css">
   <title>غصن الزيتون</title>
 </head>
 
 <body>
+
+  <!-- header -->
   <header class="header">
     <nav>
       <div class="nav-bar">
@@ -43,7 +46,7 @@ include("./getCategory.php");
             <li><a href="./ContactUsPage/ContactSection.html">Contact US</a></li>
             <?php
             while ($row = mysqli_fetch_assoc($query)) {
-              echo '<li class="navCategory"><a href="./category/allProduct/product.php?catid='.$row['cat_id']. '&catName=' . $row['cat_name'] . '">' . $row['cat_name'] . '</a></li>';
+              echo '<li class="navCategory"><a href="./category/allProduct/product.php?catid=' . $row['cat_id'] . '&catName=' . $row['cat_name'] . '">' . $row['cat_name'] . '</a></li>';
             }
             ?>
           </ul>
@@ -72,12 +75,35 @@ include("./getCategory.php");
     </nav>
   </header>
 
-  
+  <!-- header -->
+
+  <!-- category show  -->
+  <section class="center-wrapper">
+    <div class="container">
+      <div class="left-images">
+        <div class="left-image">
+          <a href="link_to_left_image1.html">
+            <img src="assets/banner-1.jpg" alt="Left Image 1">
+          </a>
+        </div>
+        <div class="left-image">
+          <a href="link_to_left_image2.html">
+            <img src="assets/banner-1.jpg" alt="Left Image 2">
+          </a>
+        </div>
+      </div>
+      <div class="right-image">
+        <a href="link_to_right_image.html">
+          <img src="assets/banner-2.jpg" alt="Right Image">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- <-- category show -->
 
 
- 
   <!--footer-->
-  
+
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
